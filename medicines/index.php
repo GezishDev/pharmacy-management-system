@@ -424,7 +424,7 @@ $categories = $catStmt->fetchAll();
                                         <span style="color: #999;">-</span>
                                     <?php endif; ?>
                                 </td>
-                                <td>₹<?php echo htmlspecialchars(number_format($medicine['price'], 2)); ?></td>
+                                <td>Br<?php echo htmlspecialchars(number_format($medicine['price'], 2)); ?></td>
                                 <td class="<?php echo $stock_class; ?>">
                                     <?php echo htmlspecialchars($medicine['quantity']); ?>
                                     <small>(<?php echo $stock_status; ?>)</small>
