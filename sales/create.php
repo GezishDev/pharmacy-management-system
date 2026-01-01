@@ -528,7 +528,7 @@ $sale_id = $pdo->lastInsertId();
                 <div class="alert alert-success">
                     <h3>✅ Sale Completed Successfully!</h3>
                     <p>Invoice Number: <strong><?php echo $invoice_number; ?></strong></p>
-                    <p>Total Amount: <strong>₹<?php echo number_format($total_amount, 2); ?></strong></p>
+                    <p>Total Amount: <strong>Br<?php echo number_format($total_amount, 2); ?></strong></p>
                     <p>
                         <a href="view.php?id=<?php echo $sale_id; ?>" style="color: #155724; text-decoration: underline;">View Invoice</a> |
                         <a href="create.php" style="color: #155724; text-decoration: underline;">Create Another Sale</a>
@@ -645,7 +645,7 @@ $sale_id = $pdo->lastInsertId();
                                                 <option value="<?php echo $med['id']; ?>" 
                                                         data-price="<?php echo $med['price']; ?>"
                                                         data-stock="<?php echo $med['quantity']; ?>">
-                                                    <?php echo htmlspecialchars($med['name']); ?> (₹<?php echo number_format($med['price'], 2); ?>)
+                                                    <?php echo htmlspecialchars($med['name']); ?> (Br<?php echo number_format($med['price'], 2); ?>)
                                                 </option>
                                             <?php endforeach; ?>
                                         </select>

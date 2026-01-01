@@ -137,7 +137,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             border: 1px solid #fcc;
         }
         
-        .demo-credentials {
+        .warnings {
             margin-top: 20px;
             padding: 15px;
             background: #f8f9fa;
@@ -146,10 +146,18 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: #555;
         }
         
-        .demo-credentials h4 {
+        .warnings p {
             margin-bottom: 10px;
-            color: #333;
+            font-weight: 500;
+            color: #ee1010ff;
+            padding-left: 65px;
         }
+         .warnings h3{
+            font-size: 12px;
+            padding-left: 8px;
+            color: grey;
+            opacity:0.5;
+         }
     </style>
 </head>
 <body>
@@ -179,10 +187,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button type="submit" class="btn-login">Login</button>
         </form>
         
-        <div class="demo-credentials">
-            <h4>Demo Credentials (You'll create these in next step):</h4>
+        <div class="warnings">
+            <!-- <h4>Demo Credentials (You'll create these in next step):</h4>
             <p>Username: admin</p>
-            <p>Password: admin123</p>
+            <p>Password: admin123</p> -->
+            <p >Authorized User Only</p>
+
+            <h3>Wishing you a productive and wonderful day</h3>
         </div>
     </div>
 </body>
