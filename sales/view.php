@@ -293,7 +293,7 @@ if(!$sale) {
         <div class="invoice-container">
             <!-- Invoice Header -->
             <div class="invoice-header">
-                <h1>Pharmacy Management System</h1>
+                <h1>Model Pharmacy</h1>
                 <p>Tax Invoice</p>
                 <h2>INVOICE #<?php echo htmlspecialchars($sale['invoice_number']); ?></h2>
             </div>
@@ -312,7 +312,7 @@ if(!$sale) {
                     </div>
                     <div class="detail-item">
                         <span>Phone:</span>
-                        <span>+91-9876543210</span>
+                        <span>+251-9876543210</span>
                     </div>
                     <div class="detail-item">
                         <span>GSTIN:</span>

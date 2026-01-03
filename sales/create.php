@@ -759,6 +759,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             text-decoration: line-through;
             opacity: 0.6;
         }
+        .model{
+           color:red;
+           font-weight:600px;
+        }
         
         @media (max-width: 768px) {
             .form-row, .receipt-details {
@@ -783,7 +787,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <a href="../dashboard.php" class="logo">Pharmacy Management</a>
+        <a href="../dashboard.php" class="logo"><span class="model">Model</span> Pharmacy</a>
         <div class="nav-links">
             <a href="../dashboard.php">Dashboard</a>
             <a href="../medicines/">Medicines</a>

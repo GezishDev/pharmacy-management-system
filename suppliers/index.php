@@ -286,12 +286,16 @@ $suppliers = $stmt->fetchAll();
             font-weight: 600;
             color: #333;
         }
+          .model{
+           color:red;
+           font-weight:600px;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <a href="../dashboard.php" class="logo">Pharmacy Management</a>
+        <a href="../dashboard.php" class="logo"><span class="model">Model</span> Pharmacy</a>
         <div class="nav-links">
             <a href="../dashboard.php">Dashboard</a>
             <a href="../medicines/">Medicines</a>

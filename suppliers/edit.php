@@ -291,7 +291,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <a href="../dashboard.php" class="logo">Pharmacy Management</a>
+        <a href="../dashboard.php" class="logo">Model Pharmacy</a>
         <div class="nav-links">
             <a href="../dashboard.php">Dashboard</a>
             <a href="../medicines/">Medicines</a>

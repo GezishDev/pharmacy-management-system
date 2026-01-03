@@ -314,6 +314,10 @@ foreach($sales as $sale) {
             align-items: center;
             gap: 8px;
         }
+         .model{
+           color:red;
+           font-weight:600px;
+        }
         
         @media print {
             .navbar, .filters, .header-actions, .summary-cards, .action-buttons {
@@ -334,7 +338,7 @@ foreach($sales as $sale) {
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <a href="../dashboard.php" class="logo">Pharmacy Management</a>
+        <a href="../dashboard.php" class="logo"><span class="model">Model</span> Pharmacy</a>
         <div class="nav-links">
             <a href="../dashboard.php">Dashboard</a>
             <a href="../medicines/">Medicines</a>

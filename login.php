@@ -158,12 +158,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: grey;
             opacity:0.5;
          }
+          .model{
+           color:red;
+           font-weight:600px;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
         <div class="login-header">
-            <h1>Pharmacy Management</h1>
+            <h1><span class="model">Model</span> Pharmacy</h1>
             <p>Sign in to access the system</p>
         </div>
         
