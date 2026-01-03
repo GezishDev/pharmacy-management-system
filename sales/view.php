@@ -304,7 +304,7 @@ if(!$sale) {
                     <h3>Seller Details</h3>
                     <div class="detail-item">
                         <span>Pharmacy Name:</span>
-                        <span>MediCare Pharmacy</span>
+                        <span>Model Pharmacy</span>
                     </div>
                     <div class="detail-item">
                         <span>Address:</span>
