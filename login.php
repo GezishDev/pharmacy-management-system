@@ -171,21 +171,30 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
         <?php endif; ?>
         
-        <form method="POST" action="">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required 
-                       placeholder="Enter your username">
-            </div>
-            
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required 
-                       placeholder="Enter your password">
-            </div>
-            
-            <button type="submit" class="btn-login">Login</button>
-        </form>
+        <form method="POST" action="" autocomplete="off">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text"
+               id="username"
+               name="username"
+               autocomplete="off"
+               required
+               placeholder="Enter your username">
+    </div>
+    
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password"
+               id="password"
+               name="password"
+               autocomplete="new-password"
+               required
+               placeholder="Enter your password">
+    </div>
+    
+    <button type="submit" class="btn-login">Login</button>
+</form>
+
         
         <div class="warnings">
             <!-- <h4>Demo Credentials (You'll create these in next step):</h4>
@@ -196,5 +205,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h3>Wishing you a productive and wonderful day</h3>
         </div>
     </div>
+
+    <script>
+window.onload = function () {
+    document.querySelector("form").reset();
+};
+</script>
+
 </body>
 </html>
