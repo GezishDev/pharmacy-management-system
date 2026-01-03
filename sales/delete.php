@@ -213,7 +213,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p><strong>Medicine:</strong> <?php echo htmlspecialchars($sale['medicine_name']); ?></p>
             <?php endif; ?>
             <p><strong>Quantity:</strong> <?php echo htmlspecialchars($sale['quantity_sold']); ?></p>
-            <p><strong>Total Amount:</strong> ₹<?php echo number_format($sale['total_price'], 2); ?></p>
+            <p><strong>Total Amount:</strong> Br<?php echo number_format($sale['total_price'], 2); ?></p>
             
             <div class="restore-info">
                 ⚠️ <?php echo $sale['quantity_sold']; ?> unit(s) will be restored to stock.

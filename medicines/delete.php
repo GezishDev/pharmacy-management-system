@@ -184,7 +184,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm'])) {
             <p><strong>Name:</strong> <?php echo htmlspecialchars($medicine['name']); ?></p>
             <p><strong>Category:</strong> <?php echo htmlspecialchars($medicine['category'] ?? 'N/A'); ?></p>
             <p><strong>Current Stock:</strong> <?php echo htmlspecialchars($medicine['quantity']); ?></p>
-            <p><strong>Price:</strong> ₹<?php echo htmlspecialchars(number_format($medicine['price'], 2)); ?></p>
+            <p><strong>Price:</strong> Br<?php echo htmlspecialchars(number_format($medicine['price'], 2)); ?></p>
         </div>
         
         <?php if($salesCount > 0): ?>
