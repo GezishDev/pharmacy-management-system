@@ -266,6 +266,115 @@ if(!$sale) {
                 background: white;
             }
         }
+        /* ===== MOBILE RESPONSIVE FIX FOR INVOICE PAGE ===== */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        flex: 1 1 45%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .navbar > div:last-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .logout-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        background: linear-gradient(135deg, #ff4d4d, #c70000);
+        color: white !important;
+        text-decoration:none;
+        border-radius: 12px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+
+    /* CONTAINER */
+    .container {
+        padding: 10px;
+    }
+
+    .invoice-container {
+        padding: 20px;
+    }
+
+    /* HEADER */
+    .invoice-header h1 {
+        font-size: 24px;
+    }
+
+    .invoice-header h2 {
+        font-size: 18px;
+    }
+
+    /* DETAILS */
+    .invoice-details {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* TABLE */
+    .items-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+    /* TOTAL SECTION */
+    .total-section {
+        padding: 20px;
+    }
+
+    .grand-total {
+        font-size: 22px;
+    }
+
+    /* ACTION BUTTONS */
+    .action-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-print,
+    .btn-back {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+    .invoice-footer {
+        font-size: 13px;
+        padding-top: 15px;
+    }
+}
+
     </style>
 </head>
 <body>

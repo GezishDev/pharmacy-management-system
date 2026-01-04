@@ -272,6 +272,162 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 grid-template-columns: 1fr;
             }
         }
+        /* Responsive Styles for Add Medicine Page */
+@media (max-width: 992px) {
+    /* Navbar stacking */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        flex: 1 1 45%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* User info & logout stacking */
+    .navbar > div:last-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .user-info {
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .logout-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        background: linear-gradient(135deg, #ff3b3b, #c70000);
+        color: white !important;
+        border-radius: 12px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+
+    .logout-btn:active {
+        transform: scale(0.96);
+    }
+
+    /* Card adjustments */
+    .card {
+        padding: 30px 20px;
+    }
+
+    .card-header h1 {
+        font-size: 24px;
+    }
+
+    .card-header p {
+        font-size: 14px;
+    }
+
+    .hint {
+        font-size: 12px;
+    }
+
+    /* Form row stacking */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn-submit, .btn-cancel {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .back-link {
+        font-size: 14px;
+    }
+
+    .card-header h1 {
+        font-size: 22px;
+    }
+
+    .card-header p {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .btn-submit, .btn-cancel {
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Super small screens */
+    .card {
+        padding: 20px 15px;
+    }
+
+    .card-header h1 {
+        font-size: 20px;
+    }
+
+    .card-header p {
+        font-size: 12px;
+    }
+
+    .form-group input, 
+    .form-group select {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .btn-submit, .btn-cancel {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
     </style>
 </head>
 <body>

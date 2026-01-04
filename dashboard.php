@@ -218,6 +218,156 @@ $low_stock_list = $stmt->fetchAll();
            color:red;
            font-weight:600px;
         }
+        /* ================= DASHBOARD MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        flex: 1 1 45%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* USER INFO + LOGOUT */
+    .navbar > div:last-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .user-info {
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .logout-btn {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 14px;
+        margin-top: 12px;
+        text-decoration: none;
+        background: linear-gradient(135deg, #ff3b3b, #c70000);
+        color: #fff !important;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        border: none;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .logout-btn:active {
+        transform: scale(0.96);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* ===== STATS GRID ===== */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        margin-bottom: 15px;
+    }
+
+    .stat-value {
+        font-size: 28px;
+    }
+
+    .stat-label {
+        font-size: 13px;
+    }
+
+    /* ===== QUICK ACTIONS ===== */
+    .quick-actions {
+        flex-direction: column;
+    }
+
+    .action-btn {
+        width: 100%;
+        margin-top: 10px;
+        padding: 14px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* ===== LOW STOCK TABLE ===== */
+    .table {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 12px 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 10px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+    }
+
+    .table td:last-child {
+        border-bottom: none;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #666;
+        flex: 1;
+    }
+
+    .stock-low {
+        display: block;
+        margin-top: 3px;
+        font-weight: 700;
+        color: #dc3545;
+    }
+}
+
     </style>
 </head>
 <body>

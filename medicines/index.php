@@ -325,6 +325,191 @@ $categories = $catStmt->fetchAll();
            color:red;
            font-weight:600px;
         }
+        /* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        flex: 1 1 45%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* USER INFO + LOGOUT */
+    .navbar > div:last-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .user-info {
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .user-info,
+    .profile,
+    .logout-btn {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .logout-btn,
+    a.logout,
+    button.logout {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 14px;
+        margin-top: 12px;
+        text-decoration: none;
+        background: linear-gradient(135deg, #ff3b3b, #c70000);
+        color: #fff !important;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        border: none;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .logout-btn:active,
+    a.logout:active,
+    button.logout:active {
+        transform: scale(0.96);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* ===== RESPONSIVE TABLE ===== */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table,
+    table tbody,
+    table tr,
+    table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 12px 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 10px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+    }
+
+    table td:last-child {
+        border-bottom: none;
+    }
+
+    table td::before {
+        /* Optional: add label from data-label attribute for clarity */
+        content: attr(data-label);
+        font-weight: 600;
+        color: #666;
+        flex: 1;
+    }
+
+    /* ===== FORM RESPONSIVE ===== */
+    input,
+    select,
+    button,
+    textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .form-row,
+    .form-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn,
+    .btn-submit,
+    .btn-add,
+    .btn-remove {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    /* ===== BUTTONS & INTERACTIVITY ===== */
+    .btn-edit,
+    .btn-delete,
+    .btn-view,
+    .add-btn,
+    .search-btn {
+        width: 100%;
+        margin-top: 6px;
+        text-align: center;
+        padding: 12px 0;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-edit:hover,
+    .btn-delete:hover,
+    .btn-view:hover,
+    .add-btn:hover,
+    .search-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    /* ===== BADGES & STOCK ===== */
+    .stock-low, .stock-medium, .stock-high {
+        display: block;
+        margin-top: 3px;
+    }
+
+    .expired-badge {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+}
+
     </style>
 </head>
 <body>

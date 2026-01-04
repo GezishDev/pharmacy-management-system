@@ -185,6 +185,58 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             font-weight: 600;
             margin-top: 10px;
         }
+        /* ===== MOBILE RESPONSIVE FIX (DELETE PAGE) ===== */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .delete-container {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .warning-icon {
+        font-size: 48px;
+    }
+
+    .sale-details {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .sale-details p {
+        margin-bottom: 8px;
+    }
+
+    /* Stack buttons vertically on mobile */
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn-delete,
+    .btn-cancel {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .btn-delete {
+        background: linear-gradient(135deg, #ff3b3b, #c70000);
+    }
+
+    .btn-cancel {
+        background: linear-gradient(135deg, #6c757d, #495057);
+    }
+
+    .btn-delete:active,
+    .btn-cancel:active {
+        transform: scale(0.97);
+    }
+}
+
     </style>
 </head>
 <body>

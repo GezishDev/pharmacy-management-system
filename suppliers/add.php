@@ -261,6 +261,100 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 grid-template-columns: 1fr;
             }
         }
+        /* ===== MOBILE RESPONSIVE FIX: SUPPLIER ADD PAGE ===== */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        flex: 1 1 45%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .navbar > div:last-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .logout-btn {
+        width: 100%;
+        padding: 14px;
+        text-align: center;
+        background: linear-gradient(135deg, #ff4d4d, #b30000);
+        color: white !important;
+        border-radius: 12px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        text-decoration:none;
+    }
+
+    /* CONTAINER */
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    /* HEADER */
+    .card-header h1 {
+        font-size: 22px;
+    }
+
+    .card-header p {
+        font-size: 14px;
+    }
+
+    /* FORM */
+    .form-group input,
+    .form-group textarea {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* BUTTONS */
+    .form-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-submit,
+    .btn-cancel {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    /* ALERTS */
+    .alert {
+        font-size: 14px;
+        padding: 12px;
+
     </style>
 </head>
 <body>

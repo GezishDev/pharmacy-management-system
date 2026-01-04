@@ -295,6 +295,76 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         .medicine-info strong {
             color: #333;
         }
+        /* Responsive styles for Edit Medicine page */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .card {
+        padding: 30px 20px;
+    }
+
+    .card-header h1 {
+        font-size: 26px;
+    }
+
+    .medicine-info {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .btn-submit, .btn-cancel {
+        font-size: 15px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr; /* Stack inputs vertically */
+        gap: 15px;
+    }
+
+    .btn-submit, .btn-cancel {
+        width: 100%;
+    }
+
+    .card-header h1 {
+        font-size: 24px;
+    }
+
+    .medicine-info {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    .card-header h1 {
+        font-size: 22px;
+    }
+
+    .medicine-info {
+        font-size: 12px;
+    }
+
+    .btn-submit, .btn-cancel {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
     </style>
 </head>
 <body>

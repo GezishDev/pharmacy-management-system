@@ -195,6 +195,50 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         .option-group input[type="radio"] {
             margin-right: 10px;
         }
+        /* ===== MOBILE RESPONSIVE FIX: SUPPLIER DELETE PAGE ===== */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .delete-container {
+        padding: 20px;
+    }
+
+    .warning-icon {
+        font-size: 50px;
+    }
+
+    .delete-container h1 {
+        font-size: 22px;
+    }
+
+    .supplier-details p {
+        font-size: 14px;
+    }
+
+    .alert-error, .warning-box {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .option-group label {
+        font-size: 14px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-delete, .btn-cancel {
+        width: 100%;
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
     </style>
 </head>
 <body>

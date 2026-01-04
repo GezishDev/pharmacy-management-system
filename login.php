@@ -162,6 +162,249 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
            color:red;
            font-weight:600px;
         }
+        /* ================= LOGIN PAGE MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+        height: auto;
+    }
+
+    .login-container {
+        padding: 25px 20px;
+        width: 100%;
+        max-width: 350px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .login-header h1 {
+        font-size: 22px;
+    }
+
+    .login-header p {
+        font-size: 14px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .btn-login {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .error-message {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .warnings {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .warnings p {
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    .warnings h3 {
+        font-size: 11px;
+        padding-left: 5px;
+    }
+
+    /* Optional: auto-focus username on mobile */
+    input#username {
+        font-size: 14px;
+    }
+}
+
+/* ================= VERY SMALL DEVICES (PHONES) ================= */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px 15px;
+    }
+
+    .login-header h1 {
+        font-size: 20px;
+    }
+
+    .btn-login {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-group input {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .error-message, .warnings {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+/* ===== LOGIN BOX HOVER LIFT ===== */
+.login-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* ===== SHAKE EFFECT FOR INCORRECT LOGIN ===== */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+.error-shake {
+    animation: shake 0.5s;
+    border: 1px solid #c33;
+}
+
+/* ================= LOGIN PAGE MOBILE RESPONSIVE + INTERACTIVE ================= */
+@media (max-width: 768px) {
+
+    body {
+        margin-top:54px;
+        padding: 10px;
+        height: auto;
+        background: linear-gradient(135deg, #667eea);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .login-container {
+        padding: 25px 20px;
+        width: 100%;
+        max-width: 360px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .login-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    }
+
+    .login-header h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .login-header p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        padding: 12px 15px;
+        font-size: 15px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .form-group input:focus {
+        border-color: #764ba2;
+        box-shadow: 0 0 10px rgba(118, 75, 162, 0.3);
+    }
+
+    .btn-login {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        transition: all 0.3s ease;
+    }
+
+    .btn-login:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+    }
+
+    .error-message {
+        font-size: 13px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .warnings {
+        font-size: 13px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .warnings p {
+        padding-left: 0;
+        font-size: 13px;
+    }
+
+    .warnings h3 {
+        font-size: 11px;
+    }
+}
+
+/* ================= VERY SMALL PHONES ================= */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px 15px;
+        max-width: 320px;
+    }
+
+    .login-header h1 {
+        font-size: 20px;
+    }
+
+    .login-header p {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .btn-login {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .error-message, .warnings {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* ================= OPTIONAL SHAKE EFFECT FOR ERROR ================= */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+.error-shake {
+    animation: shake 0.5s;
+    border: 1px solid #c33;
+}
+
+
     </style>
 </head>
 <body>

@@ -290,6 +290,187 @@ $suppliers = $stmt->fetchAll();
            color:red;
            font-weight:600px;
         }
+        @media (max-width: 992px) {
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        flex: 1 1 45%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* USER + LOGOUT */
+    .navbar > div:last-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .user-info {
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .logout-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        background: linear-gradient(135deg, #ff3b3b, #c70000);
+        color: white !important;
+        border-radius: 12px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+
+    .logout-btn:active {
+        transform: scale(0.96);
+    }
+
+    /* HEADER ACTIONS */
+    .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .page-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .add-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    /* SEARCH BOX */
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box input,
+    .search-btn,
+    .search-box a {
+        width: 100%;
+    }
+
+    /* TABLE */
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .table {
+        min-width: 700px;
+        font-size: 14px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .btn-edit,
+    .btn-delete,
+    .btn-view {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Shrink text and paddings further for smaller devices */
+    .table th, .table td {
+        padding: 10px;
+    }
+
+    .add-btn, .search-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .action-buttons {
+        gap: 4px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .search-box input {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Card-like table rows */
+    .table thead {
+        display: none;
+    }
+
+    .table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+
+    .table tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border: none;
+    }
+
+    .table tbody td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #555;
+        flex: 1;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .btn-edit,
+    .btn-delete,
+    .btn-view {
+        width: 100%;
+    }
+
+    .medicine-count {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
     </style>
 </head>
 <body>

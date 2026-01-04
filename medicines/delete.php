@@ -158,6 +158,95 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm'])) {
             margin-bottom: 20px;
             border: 1px solid #ffeaa7;
         }
+        /* Responsive styles for Delete Medicine Page */
+@media (max-width: 992px) {
+    body {
+        padding: 15px;
+    }
+
+    .delete-container {
+        padding: 30px 20px;
+    }
+
+    .warning-icon {
+        font-size: 50px;
+    }
+
+    .delete-container h1 {
+        font-size: 24px;
+    }
+
+    .medicine-details p {
+        font-size: 14px;
+    }
+
+    .btn-delete, .btn-cancel {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .delete-container {
+        padding: 25px 15px;
+    }
+
+    .warning-icon {
+        font-size: 45px;
+    }
+
+    .delete-container h1 {
+        font-size: 22px;
+    }
+
+    .medicine-details p {
+        font-size: 13px;
+    }
+
+    .sales-warning, .alert-error {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .btn-delete, .btn-cancel {
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .delete-container {
+        padding: 20px 10px;
+    }
+
+    .warning-icon {
+        font-size: 40px;
+    }
+
+    .delete-container h1 {
+        font-size: 20px;
+    }
+
+    .medicine-details p {
+        font-size: 12px;
+    }
+
+    .sales-warning, .alert-error {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .btn-delete, .btn-cancel {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
     </style>
 </head>
 <body>
