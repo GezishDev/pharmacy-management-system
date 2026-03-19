@@ -1,10 +1,10 @@
 Pharmacy Management System
 
-h![login_page](screenshots/login_page.png)
-h![home_page](screenshots/pharmacy_home.png)
-h![medicines_page](screenshots/medicine_page.png)
-h![sales_page](screenshots/sales_page.png)
-h![suppliers_page](screenshots/suppliers_page.png)
+![login_page](screenshots/login_page.png)
+![home_page](screenshots/pharmacy_home.png)
+![medicines_page](screenshots/medicine_page.png)
+![sales_page](screenshots/sales_page.png)
+![suppliers_page](screenshots/suppliers_page.png)
 
 
 
@@ -315,26 +315,26 @@ Add your actual screenshots here. Example:
 
 Login Page
 
-h![login_page](screenshots/login_page.png)
+![login_page](screenshots/login_page.png)
 
 Dashboard
 
-h![dashboard_page](screenshots/pharmacy_home.png)
+![dashboard_page](screenshots/pharmacy_home.png)
 
 
 Medicines List	
 
-h![medicines_list_page](screenshots/medicine_page.png)
+![medicines_list_page](screenshots/medicine_page.png)
 
 New Sale
 
-h![new_sale_page](screenshots/newSale.png)
+![new_sale_page](screenshots/newSale.png)
 
 
 Invoice	Sales Report
 
 
-h![Invoice_list_page](screenshots/invoice_list.pngg)
+![Invoice_list_page](screenshots/invoice_list.pngg)
 
 📁 **Folder Structure**
 
